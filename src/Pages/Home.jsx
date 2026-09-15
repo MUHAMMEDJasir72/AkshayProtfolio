@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaLinkedin,
@@ -160,18 +161,21 @@ function Home() {
               >
 
                 {/* Let's Connect */}
-                <motion.a
-                  href="/contact"
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="group flex items-center gap-2 px-6 py-3.5 rounded-xl bg-purple-500 hover:bg-purple-400 text-white font-semibold transition-all duration-300 shadow-lg shadow-purple-500/20"
-                >
-                  Let's Connect
+                <motion.div
+                          whileHover={{ scale: 1.04 }}
+                          whileTap={{ scale: 0.97 }}
+                        >
+                          <Link
+                            to="/contact"
+                            className="group flex items-center gap-2 px-6 py-3.5 rounded-xl bg-purple-500 hover:bg-purple-400 text-white font-semibold transition-all duration-300 shadow-lg shadow-purple-500/20"
+                          >
+                            Let's Connect
 
-                  <MdArrowOutward
-                    className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-                  />
-                </motion.a>
+                            <MdArrowOutward
+                              className="text-xl group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                            />
+                          </Link>
+                        </motion.div>
 
                 {/* Resume */}
                 <motion.a
