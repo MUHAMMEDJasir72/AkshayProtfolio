@@ -179,7 +179,7 @@ function Home() {
 
                 {/* Resume */}
                 <motion.a
-                  href="/Akshay_Das.pdf"
+                  href="/akshay_das_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.04 }}
